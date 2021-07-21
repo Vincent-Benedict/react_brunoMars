@@ -1,0 +1,54 @@
+
+.search-container{
+    width: 98%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#searchPage-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 2em 0;
+}
+
+.search-textField{
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 0.5px solid rgb(87, 87, 87)
+}
+
+#searchPage-albums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#searchPage-header p{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+#searchPage-albums-header{
+    margin: 1em 0;
+}
+
+#searchPage-albums-header p{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.search-textField-dark{
+    background-color: rgb(54, 54, 54);
+    color: rgb(197, 197, 197);
+    border: 0.5px solid rgb(87, 87, 87)
+}
+

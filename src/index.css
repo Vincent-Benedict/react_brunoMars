@@ -5,9 +5,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+p{
+  margin: 0.5em 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main{
+  padding: 1.5em 0;
+  transition: 0.4s;
+  min-height: 100vh;
+}
+
+:root{
+  --main-background-dark: rgb(34, 34, 34);
+  --card-background-dark: #424242;
+  --card-background-hover-dark: #4e4e4e;
+  --card-shadow-dark: 10px 10px 24px -12px rgba(141, 141, 141, 0.75);
+  --card-border-dark: 0.5px solid rgb(39, 39, 39);
+  --txt-primary-dark: #ffffff;
+
+  --main-background-light: white;
+  --card-background-light: rgb(241, 241, 241);
+  --card-shadow-light: 10px 10px 24px -12px rgba(0,0,0,0.75);
+  --card-background-hover-light: white;
+  --card-border-light: 0.5px solid rgb(218, 218, 218);
+  --txt-primary-light: #000000;
+}
+
+
+.main-dark{
+  background-color: var(--main-background-dark);
+}
+
+.main-light{
+  background-color: var(--main-background-light);
 }

@@ -1,0 +1,28 @@
+footer{
+    background-color: black;
+    padding: 1.5em;
+}
+
+
+.container2{
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(245, 245, 245);
+    font-size: 0.8rem;
+} 
+
+
+.container2 p{
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .container2 p{
+        font-size: 0.6rem;
+    }
+  }

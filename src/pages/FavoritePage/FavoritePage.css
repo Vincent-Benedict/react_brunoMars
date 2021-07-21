@@ -1,0 +1,170 @@
+#favoritePage-container{
+    width: 96%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#favoritePage-header{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#favoritePage-body{
+    margin-top: 3%;
+}
+
+.no-albums-fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--txt-primary-light);
+    height: 80vh;
+}
+
+.fav-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--card-background-light);
+    border: var(--card-border-light);
+    box-shadow: var(--card-shadow-light);
+    margin: 0.8em 0;
+    padding: 1em 1.5em;
+}
+
+.fav-card:hover{
+    background-color: var(--card-background-hover-light);
+}
+
+.fav-card-left{
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.fav-card-img{
+    width: 30%;
+}
+
+.fav-card-name{
+    width: 70%;
+    margin-left: 2%;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.fav-card-img img{
+    width: 100%;
+    border: 0.1px solid rgb(209, 209, 209);
+}
+
+
+.fav-card-right{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.no-album-dark{
+    color: var(--txt-primary-dark);
+}
+
+/* svg */
+.svg-found-fav{
+    width: 30%;
+    stroke: rgb(255, 80, 80);
+    fill: rgb(255, 96, 96);
+    cursor: pointer;
+}
+
+.svg-found-fav:hover{
+    fill: rgb(255, 96, 96);
+}
+
+.svg-found-fav:active{
+    fill: rgb(219, 74, 74);
+}
+
+.svg-not-found-fav{
+    width: 9%;
+    margin-top: 2%;
+    stroke: rgb(255, 80, 80);
+    fill: rgb(245, 245, 245);
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+
+.title-dark{
+    color: var(--txt-primary-dark);
+}
+
+.fav-card-dark{
+    background-color: var(--card-background-dark);
+    border: var(--card-border-dark);
+    box-shadow: none;
+}
+
+.fav-card-dark:hover{
+    background-color: var(--card-background-hover-dark);
+}
+
+.fav-card-name-dark{
+    color: var(--txt-primary-dark);
+}
+
+
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .fav-card{
+        display: block;
+    }
+
+    .fav-card-left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .fav-card-name{
+        width: 100%;
+        text-align: center;
+    }
+
+    .fav-card-img{
+        width: 100%;
+    }
+
+    .fav-card-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .svg-found-fav{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    html{
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,136 @@
+#albumPage-container{
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#albumPage-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#album-image-container{
+    width: 38%;
+    margin-right: 0.8%;
+}
+
+.album-image{
+    width: 100%;
+    box-shadow: var(--card-shadow-light);
+}
+
+.fav{
+    font-weight: bold;
+    color: var(--txt-primary-light);
+}
+
+#albumPage-right{
+    width: 60%;
+}
+
+#album-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#album-icon{
+    display: flex;
+    align-items: center;
+}
+
+#album-icon img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 0.8%;
+}
+
+#album-icon p{
+    font-weight: bold;
+}
+
+#albumPage-body{   
+    width: 100%;   
+}
+
+.fav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.fav-icon p{
+    margin: 0;
+}
+
+.svg-found{
+    width: 9%;
+    margin-top: 2%;
+    stroke: rgb(255, 80, 80);
+    fill: rgb(255, 96, 96);
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.svg-found:hover{
+    fill: rgb(255, 96, 96);
+}
+
+.svg-found:active{
+    fill: rgb(219, 74, 74);
+}
+
+.svg-not-found{
+    width: 9%;
+    margin-top: 2%;
+    stroke: rgb(255, 80, 80);
+    fill: rgb(245, 245, 245);
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.fav-dark{
+    color: var(--txt-primary-dark);
+}
+
+
+@media screen and (max-width: 1020px) {
+    html{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    html{
+        font-size: 14.5px;
+    }
+
+    #album-name{
+        font-size: 1.3rem;
+    }
+
+    #album-icon img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    html{
+        font-size: 10px;
+    }
+
+    .fav-icon p{
+        font-size: 0.9rem;
+    }
+
+    #album-name{
+        font-size: 0.9rem;
+    }
+
+    #album-icon p{
+        font-size: 0.8rem;
+    }
+
+    #album-icon img{
+        width: 20px;
+    }
+}

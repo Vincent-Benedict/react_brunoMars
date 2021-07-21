@@ -1,0 +1,78 @@
+
+.track-card{
+    display: flex;
+    box-sizing: border-box;
+    padding: 1em 3em;
+    align-items: center;
+    justify-content: space-between;
+    border: var(--card-border-light);
+    border-radius: 5px;   
+    margin: 0.3em 0;
+    font-weight: bold;
+    background-color: var(--card-background-light);
+    transition: 0.3s;
+}
+
+.track-card:hover{
+    background-color: var(--card-background-hover-light);
+}
+
+.track-card-left{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.track-card-index{
+    margin-right: 30%;
+}
+
+.track-card-right{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.track-card-dark{
+    background-color: var(--card-background-dark);
+    border: var(--card-border-dark);
+}
+
+.track-card-dark:hover{
+    background-color: var(--card-background-hover-dark);
+}
+
+.track-card-left-dark{
+    color: var(--txt-primary-dark);
+}
+
+.album-image-dark{
+    box-shadow: none;
+}
+
+.album-name-dark{
+    color: var(--txt-primary-dark);
+}
+
+.total-tracks-dark{
+    color: var(--txt-primary-dark);
+}
+
+@media screen and (max-width: 650px) {
+    .track-card{
+        display: block;
+        padding: 1em 0.4em;
+    }
+
+    .track-card-index{
+        margin-right: 10%;
+    }
+
+    .track-card-left, .track-card-right{
+        width: 100%;
+    }
+
+    .track-card-right audio{
+        width: 100%;
+    }
+}

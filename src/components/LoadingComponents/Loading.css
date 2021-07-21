@@ -1,0 +1,23 @@
+.containerLoad{
+    width: 95%;
+    max-width: 500px;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--txt-primary-light);
+    font-weight: bold;
+    background-color: var(--card-background-light);
+    box-shadow: var(--card-shadow-light);
+    border: var(--card-border-light);
+}
+
+.containerLoad-dark{
+    background-color: var(--card-background-dark);
+    border: var(--card-border-dark);
+    color: var(--txt-primary-dark);
+}
