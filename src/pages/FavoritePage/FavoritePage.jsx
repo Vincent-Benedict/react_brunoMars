@@ -3,6 +3,7 @@ import AppContext from "../../components/AppContext/AppContext";
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Loading from '../../components/LoadingComponents/Loading';
+import { Link } from 'react-router-dom';
 import './FavoritePage.css'
 
 export default function FavoritePage(){
@@ -33,15 +34,17 @@ export default function FavoritePage(){
                             favList?.map((f) => {
                                 return (
                                     <div className={myContext.darkMode ? "fav-card fav-card-dark" : "fav-card"}>
-                                        <div className="fav-card-left">
-                                            <div className="fav-card-img">
-                                                <img src={f.image} alt="" />
-                                            </div>
+                                        <Link style={{textDecoration: "none"}} to={`/album/${f.id}`}>
+                                            <div className="fav-card-left">
+                                                <div className="fav-card-img">
+                                                    <img src={f.image} alt="" />
+                                                </div>
 
-                                            <div className={myContext.darkMode ? "fav-card-name fav-card-name-dark" : "fav-card-name"}>
-                                                <p>{f.name}</p>
+                                                <div className={myContext.darkMode ? "fav-card-name fav-card-name-dark" : "fav-card-name"}>
+                                                    <p>{f.name}</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
 
                                         <div className="fav-card-right">
                                             <svg onClick={() => { 
